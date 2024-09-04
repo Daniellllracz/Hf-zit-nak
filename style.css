@@ -1,0 +1,58 @@
+/* Biztosítjuk, hogy a teljes oldal kitöltse a képernyőt */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif; /* modern betűtípus hozzáadása */
+}
+
+/* Háttér beállítása színátmenetesre */
+body {
+    background: linear-gradient(to bottom, #808080, #0000ff); /* szürkéből kékbe színátmenet */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Biztosítjuk, hogy a teljes képernyőt lefedje */
+}
+
+/* Gomb stílus */
+#gomb {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* kerekített szélek */
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Gomb középre igazítása */
+#gomb:hover {
+    background-color: darkgray; /* Hover állapot */
+}
+
+/* Container (doboz) stílus */
+.container {
+    border: 3px solid black; /* Fekete szín a borderhez */
+    border-radius: 10px; /* Kerekített szélek */
+    padding: 35px 20px;
+    background-color: white; /* Fehér háttér a dobozban */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Árnyék a modernebb megjelenéshez */
+    max-width: 500px; /* Maximum szélesség a reszponzivitáshoz */
+    width: 100%;
+    margin: 20px; /* Margin a tetején és alján */
+}
+
+/* Checkbox és radio button stílusok */
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Média lekérdezés reszponzivitáshoz */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Szélesség csökkentése tableten és telefonon */
+        padding: 20px;
+    }
+}

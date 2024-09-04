@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kvíz</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Nagy Kvíz Játékok.hu</h1>
+        </div>
+        <div class="row">
+            <h2>Minek van kardántengelye?</h2>
+        </div>
+        <div class="row">
+            <input type="checkbox" id="auto"><label for="auto">Autó</label><br>
+            <input type="checkbox" id="motor"><label for="motor">Motor</label><br>
+            <input type="checkbox" id="hajo"><label for="hajo">Hajó</label><br>
+            <input type="checkbox" id="urhajo"><label for="urhajo">Űrhajó</label><br>
+        </div>
+        <div class="row">
+            <h2>Autó szerelő vagy?</h2>
+        </div>
+        <div class="row">
+            <input type="checkbox" name="szerelo" id="igen"><label for="igen">Igen</label><br>
+            <input type="checkbox" name="szerelo" id="nem"><label for="nem">Nem</label><br>
+            <button type="button" id="gomb">Eredmény megjelenítése</button>
+        </div>
+        <!-- Eredmény megjelenítése -->
+        <div id="eredmeny"></div>
+    </div>
+
+    <!-- JavaScript fájl beillesztése -->
+    <script src="script.js"></script>
+</body>
+
+</html>
